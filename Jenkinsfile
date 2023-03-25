@@ -49,8 +49,9 @@ pipeline {
                     gv.deployApp()
                     echo "deploying to ${ONE}"
                     echo "deploying to ${TWO}"
+                    }
                 }
             }
-        }
-    }   
+        }   
+    }
 }
