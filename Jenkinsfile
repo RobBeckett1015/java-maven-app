@@ -1,4 +1,4 @@
-def gv = script.groovy
+def gv
 
 
 pipeline {
