@@ -43,15 +43,15 @@ pipeline {
                 parameters{
                     choice(name: 'ONE', choices: ['dev', 'staging', 'prod'], description: '')
                     choice(name: 'TWO', choices: ['dev', 'staging', 'prod'], description: '')
+                    }
             }
             steps {
-                script{
+                    script{
                     gv.deployApp()
                     echo "deploying to ${ONE}"
                     echo "deploying to ${TWO}"
-                    }
                 }
             }
-        }   
-    }
+        }
+    }   
 }
