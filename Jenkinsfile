@@ -33,8 +33,8 @@ pipeline {
             steps {
                 script {
                     deployApp()
-                }
             }
         }
     }
 }
+
