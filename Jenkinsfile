@@ -1,12 +1,12 @@
 #!/usr/bin/env groovy
 pipeline{
-    agent any
+    agent none
     stages{
         stage('test'){
             steps{
                 script{
                     echo "Testing the application"
-                    echo 'Executing pipeline for $BRANCH_NAME'
+                    echo "Executing pipeline for $BRANCH_NAME"
                 }
             }
         }
